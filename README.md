@@ -50,19 +50,20 @@ CPIH provides a more comprehensive measure of inflation than CPI by incorporatin
 
  **Exploratory Analysis & Visualisations**
 
+**UK Inflation (CPIH) Trend: 1989-2022**
 ![UK Inflation Trend](images/inflation_trend.png)
 
-This chart shows long-term inflation patterns in the UK, highlighting periods of economic volatility.
+This chart shows long-term evolution of UK inflation over more than three decades. Inflation remains relatively stable between 2010 and 2020 before rising sharply post-2021, reflecting pandemic related supply shocks, energy price increases, and monetary tightening cycles.
 
-
+**Seasonal Decomposition of the UK Inflation**
 ![Seasonal Decomposition](images/seasonal_decomposition.png)
 
-This chart helps identify any recurring seasonal patterns or long-term trend.
+The decomposition separates inflation into trend, seasonal, and residual components. While inflation is primarily trend-driven, the seasonal component suggests recurring short-term flunctuations, likely influenced by energy prices and consumer spending cycles. Residuals capture irregular economic shocks.
 
-
+**12-Month UK Inflation Forecast with 95% Confidence Intervals**
 ![UK Inflation Forecast](images/inflation_forecast.png)
 
-The chart above visualises both the observed historical inflation rates (blue line) and the forecasted values (orange line), with the grey shaded region representing the 95% confidence interval.
+The ARIMA-based forec ast suggests a gradual moderation of inflation over the next 12 months following the post-pandemic surge. The widening confidence interval reflects continued uncertainty driven by external factors such as energy markets, geopolitical risks, and monetary policy decisions.
 
 
 **Methodology**
