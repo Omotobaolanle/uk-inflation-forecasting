@@ -50,18 +50,20 @@ CPIH provides a more comprehensive measure of inflation than CPI by incorporatin
 
  **Exploratory Analysis & Visualisations**
 
- ## UK Inflation Trend (1989–2022)
 ![UK Inflation Trend](images/inflation_trend.png)
 
 This chart shows long-term inflation patterns in the UK, highlighting periods of economic volatility.
+
 
 ![Seasonal Decomposition](images/seasonal_decomposition.png)
 
 This chart helps identify any recurring seasonal patterns or long-term trend.
 
+
 ![UK Inflation Forecast](images/inflation_forecast.png)
 
 The chart above visualises both the observed historical inflation rates (blue line) and the forecasted values (orange line), with the grey shaded region representing the 95% confidence interval.
+
 
 **Methodology**
 
