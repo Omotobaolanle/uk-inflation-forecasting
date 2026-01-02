@@ -1,4 +1,4 @@
-** UK Inflation (CPIH) Time Series Analysis & Forecasting (1989–2022)**
+**UK Inflation (CPIH) Time Series Analysis & Forecasting (1989–2022)**
 
 **Overview**
 
