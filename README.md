@@ -20,14 +20,14 @@ The chart shows the long-term evolution of UK inflation, highlighting:
 
 ### Trend and Seasonality Decomposition
 
-![Seasonal Decomposition](images/decomposition.png)
+![Seasonal Decomposition](images/seasonal_decomposition.png)
 
 Seasonal decomposition separates inflation into trend, seasonal, and residual components.  
 The results indicate recurring monthly patterns alongside a clear long-term trend, supporting the use of time-series forecasting models.
 
 ### 12-Month Inflation Forecast (ARIMA)
 
-![Inflation Forecast](images/forecast.png)
+![Inflation Forecast](images/inflation_forecast.png)
 
 The ARIMA forecast suggests a gradual moderation of inflation over the next 12 months.  
 The confidence intervals highlight uncertainty driven by external economic factors such as energy prices, monetary tightening, and geopolitical risks.
