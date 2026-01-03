@@ -1,152 +1,98 @@
-**UK Inflation (CPIH) Time Series Analysis & Forecasting (1989–2022)**
+**UK Inflation (CPIH) Time Series Analysis & Policy-Relevant Forecasting (1989–2022)**
 
 **Overview**
 
-This project presents a comprehensive time series analysis of UK inflation using the Consumer Prices Index including owner occupiers’ housing costs (CPIH). Covering over three decades of monthly data (1989–2022), the analysis explores long-term inflation trends, seasonal patterns, and short-term volatility, and produces a 12-month forward-looking forecast using an ARIMA model.
+This project analyses long-term UK inflation dynamics using the **Consumer Prices Index including Owner Occupiers’ Housing Costs (CPIH)** from 1989 to 2022.
+It applies **time-series decomposition and ARIMA** forecasting to identify historical trends, seasonal behaviour, and short-term inflation trajectories.
 
-The objective is to demonstrate how applied data science and statistical modelling can support economic understanding, policy analysis, and data-driven decision-making in real-world contexts.
- 
-**Why This Matters**
+The analysis is designed to demonstrate how **data analytics and statistical modelling can support economic understanding and policy-relevant decision-making.**
 
-Inflation is one of the most critical economic indicators affecting households, businesses, and governments. In the UK, inflation directly influences:
+## Key Visual Insights
 
-•	Monetary policy decisions by the Bank of England
+### UK Inflation Trend (1989–2022)
 
-•	Interest rates, wages, and household purchasing power
-
-•	Business pricing strategies and investment planning
-
-•	Public confidence in economic stability
-
-By analysing long-term inflation patterns and forecasting future movements, this project provides insight into how data analytics can be used to anticipate economic pressures and inform strategic responses — particularly during periods of volatility such as the post-pandemic cost-of-living crisis.
- 
-**Objectives**
-
-•	Analyse long-term trends in UK CPIH inflation (1989–2022)
-
-•	Identify seasonal and cyclical patterns in inflation data
-
-•	Build and interpret an ARIMA time series model
-
-•	Forecast UK inflation for the next 12 months
-
-•	Evaluate model performance using standard error metrics
-
-•	Translate technical outputs into economic insight
- 
-**Data Source**
-
-•	Dataset: UK CPIH (Consumer Prices Index including owner occupiers’ housing costs)
-
-•	Publisher: Office for National Statistics (ONS)
-
-•	Source: Kaggle (ONS Open Data)
-
-•	Licence: Open Government Licence v3.0
-
-•	Frequency: Monthly
-
-CPIH provides a more comprehensive measure of inflation than CPI by incorporating housing costs, making it particularly relevant for understanding the lived economic experience of UK households.
-
- **Exploratory Analysis & Visualisations**
-
-**UK Inflation (CPIH) Trend: 1989-2022**
 ![UK Inflation Trend](images/inflation_trend.png)
 
-This chart shows long-term evolution of UK inflation over more than three decades. Inflation remains relatively stable between 2010 and 2020 before rising sharply post-2021, reflecting pandemic related supply shocks, energy price increases, and monetary tightening cycles.
+The chart shows the long-term evolution of UK inflation, highlighting:
+- Elevated inflation in the early 1990s  
+- A prolonged period of stability between 2010 and 2020  
+- A sharp post-pandemic surge from 2021 onwards
 
-**Seasonal Decomposition of the UK Inflation**
-![Seasonal Decomposition](images/seasonal_decomposition.png)
+### Trend and Seasonality Decomposition
 
-The decomposition separates inflation into trend, seasonal, and residual components. While inflation is primarily trend-driven, the seasonal component suggests recurring short-term flunctuations, likely influenced by energy prices and consumer spending cycles. Residuals capture irregular economic shocks.
+![Seasonal Decomposition](images/decomposition.png)
 
-**12-Month UK Inflation Forecast with 95% Confidence Intervals**
-![UK Inflation Forecast](images/inflation_forecast.png)
+Seasonal decomposition separates inflation into trend, seasonal, and residual components.  
+The results indicate recurring monthly patterns alongside a clear long-term trend, supporting the use of time-series forecasting models.
 
-The ARIMA-based forec ast suggests a gradual moderation of inflation over the next 12 months following the post-pandemic surge. The widening confidence interval reflects continued uncertainty driven by external factors such as energy markets, geopolitical risks, and monetary policy decisions.
+### 12-Month Inflation Forecast (ARIMA)
 
+![Inflation Forecast](images/forecast.png)
 
-**Methodology**
+The ARIMA forecast suggests a gradual moderation of inflation over the next 12 months.  
+The confidence intervals highlight uncertainty driven by external economic factors such as energy prices, monetary tightening, and geopolitical risks.
 
-1. Data Preparation
+## Project Objectives
 
-•	Converted year and month fields into a unified datetime index
+- Analyse long-term inflation trends in the UK economy (1989 to 2022)  
+- Identify seasonal and structural patterns in CPIH data  
+- Develop and interpret an ARIMA forecasting model
+- Translate statistical outputs into meaningful economic insights  
 
-•	Ensured chronological ordering and consistency
+## Why UK Inflation Matters
 
-•	Validated data types and missing values
+Inflation is a core indicator of economic stability and directly affects:
 
+- Monetary policy decisions by the Bank of England  
+- Business pricing and investment decisions 
+- Household purchasing power and cost-of-living pressures
+- Wage growth and labour market dynamics
 
-2. Exploratory Analysis
+By analysing inflation trends quantitatively, policymakers and analysts can better anticipate economic risks and design effective responses.
 
-•	Visualised inflation trends over time
+## Methodology
 
-•	Examined volatility and regime changes
+- Data cleaning and transformation into a monthly time series  
+- Exploratory data analysis and trend visualisation  
+- Seasonal decomposition to identify trend and recurring patterns  
+- ARIMA(1,1,1) model development and fitting  
+- 12-month out-of-sample forecasting  
+- Model evaluation using standard error metrics  
 
-•	Identified structural shifts in inflation behaviour
+## Model Performance
 
+- **Mean Squared Error (MSE):** 6.36  
+- **Mean Absolute Error (MAE):** 2.26  
+- **Root Mean Squared Error (RMSE):** 2.52  
 
-3. Seasonal Decomposition
+The results indicate reasonable short-term predictive accuracy for macroeconomic time-series data, while acknowledging uncertainty due to external shocks.
 
-•	Decomposed the series into trend, seasonal, and residual components
+## Economic Interpretation
 
-•	Assessed the presence of recurring inflation patterns
+- Inflation is projected to stabilise around 3-4% toward the end of the forecast horizon
+- This suggests gradual reversion toward the Bank of England's long-term inflation target
+- The forecast supports expectations of easing inflationary pressure, subject to policy and external conditions
 
+## Tools & Skills Demonstrated
 
-4. Time Series Modelling
+- Python (pandas, matplotlib, seaborn, statsmodels)
+- Time series analysis and forecasting
+- ARIMA modelling
+- Economic data interpretation
+- Data visualisation and storytelling
+- Model evaluation and validation
 
-•	Built an ARIMA(1,1,1) model to capture autoregressive and moving average dynamics
+## Data Source
 
+- **Dataset:** UK CPIH (Consumer Prices Index including Owner Occupiers’ Housing Costs)  
+- **Time Period:** 1989–2022  
+- **Publisher:** Office for National Statistics (ONS)  
+- **Licence:** Open Government Licence v3.0  
+- **Accessed via:** Kaggle  
 
-•	Evaluated model fit using AIC and diagnostic statistics
+## Future Enhancements
 
-•	Generated a 12-month inflation forecast with confidence intervals
+- Incorporate exogenous macroeconomic variables such as interest rates, GDP, and energy prices 
+- Compare ARIMA with SARIMA and multivariate time-series models  
+- Extend analysis to CPI and RPI inflation indices  
 
-
-5. Model Evaluation
-
-•	Performed train-test validation (training data up to 2021, test data for 2022)
-
-•	Evaluated performance using:
-o	Mean Squared Error (MSE)
-o	Mean Absolute Error (MAE)
-o	Root Mean Squared Error (RMSE)
- 
-**Key Insights**
-
-•	UK inflation exhibits clear long-term structural shifts, including:
-o	High inflation in the early 1990s
-o	Extended low-inflation stability between 2010–2020
-o	Sharp post-2021 inflation driven by global shocks
-
-•	The ARIMA forecast suggests a gradual moderation of inflation following the 2021–2022 surge, though uncertainty remains elevated
-
-•	Confidence intervals highlight the sensitivity of inflation forecasts to external economic factors such as energy prices and monetary tightening
- 
-**Tools & Technologies**
-
-•	Python
-
-•	Pandas & NumPy
-
-•	Matplotlib & Seaborn
-
-•	Statsmodels (ARIMA, seasonal decomposition)
-
-•	Jupyter Notebook
- 
-**Future Enhancements**
-
-•	Incorporating exogenous variables (interest rates, GDP, energy prices)
-
-•	Comparing ARIMA with advanced models (SARIMA, VAR, ML-based forecasting)
-
-•	Automating data updates via ONS APIs
-
-•	Deploying forecasts into an interactive dashboard (Power BI / Streamlit)
- 
-**Author**
-
-Omobolanle Adetoyinbo
-
-Data Analyst | Applied Machine Learning | Economic & Forecasting Analytics
